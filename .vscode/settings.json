@@ -1,0 +1,26 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css",
+            "savePathReplacementPairs": null
+        }
+    ],
+
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**"
+    ],
+
+    "liveSassCompile.settings.partialsList": [
+        "/**/_*.s[ac]ss"
+    ],
+
+    "liveSassCompile.settings.autoprefix": "defaults",
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.watchOnLaunch": true,
+    "liveSassCompile.settings.showOutputWindowOn": "None",
+    "liveSassCompile.settings.showAnnouncements": false,
+
+}
