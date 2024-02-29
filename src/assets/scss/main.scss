@@ -1,14 +1,14 @@
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'abstracts/variables';
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+@import "abstracts/variables";
 
-@import 'base/reset';
-@import 'base/typography';
+@import "base/reset";
+@import "base/typography";
 
-@import 'components/buttons';
+@import "components/buttons";
 
-@import 'layout/footer';
-@import 'layout/header';
+@import "layout/footer";
+@import "layout/header";
 
-@import 'pages/home';
+@import "pages/home";

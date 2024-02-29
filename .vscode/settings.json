@@ -23,4 +23,6 @@
     "liveSassCompile.settings.showOutputWindowOn": "None",
     "liveSassCompile.settings.showAnnouncements": false,
 
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+
 }
