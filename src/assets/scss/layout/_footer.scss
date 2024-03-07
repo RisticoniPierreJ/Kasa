@@ -1,25 +1,27 @@
 /********************************************** Footer ************************************************/
 /*********************************************************************************************************/
 
-.footer{
-    @extend %flex-column;
-    align-items: center;
-    justify-content: space-between;
-    // gap: 28px;
+.footer {
+    @extend %flex-columnCentered;
     width: 100%;
     height: 209px;
     background-color: black;
     padding: 66px 464px 29px 464px;
 
-    &_logo{
+    &__content {
+        @extend %flex-columnCentered;
+        gap: 28px;
+        min-width: 513px;
+    }
+
+    &_logo {
         @extend %flex-row;
         align-items: flex-end;
         gap: 6px;
-
     }
 
-    &_txt{
+    &_txt {
         color: white;
+        // width: 513px;
     }
-
 }

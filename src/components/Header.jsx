@@ -13,9 +13,6 @@ function Header() {
                     <NavLink to="/apropos">À Propos</NavLink>
                 </nav>
             </header>
-            <div>
-                <Outlet />
-            </div>
         </>
     );
 }

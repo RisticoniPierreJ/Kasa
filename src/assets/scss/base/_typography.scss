@@ -37,3 +37,46 @@
         font-weight: 500;
     }
 }
+
+/************************ Page Error ************************/
+
+.pageError {
+    &__title {
+        color: #ff6060;
+        font-family: Montserrat;
+        font-size: 18rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__txt {
+        color: #ff6060;
+        font-family: Montserrat;
+        font-size: 2.25rem;
+    }
+
+    &__link {
+        font-family: Montserrat;
+        font-size: 2.25rem;
+        text-decoration: underline;
+    }
+}
+
+/************************ Page about ************************/
+.aboutArticle {
+    @extend %flex-column;
+
+    &__title, &__txt {
+        font-family : Montserrat;
+    }
+    
+    &__title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__txt {
+        font-size: 18px;
+    }
+}

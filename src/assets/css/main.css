@@ -1,18 +1,18 @@
 /********************************************** Placeholders ************************************************/
 /*********************************************************************************************************/
-.footer {
+.aboutArticle {
   display: flex;
   flex-direction: column;
 }
 
-.mainContainer {
+.pageError__container, .aboutArticleAll, .mainContainerAbout, .mainContainer, .footer__content, .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.header_nav, .footer_logo {
+.aboutArticle__title, .header_nav, .footer_logo {
   display: flex;
 }
 
@@ -122,41 +122,40 @@ main {
   font-weight: 500;
 }
 
-/********************************************** Footer ************************************************/
-/*********************************************************************************************************/
-.footer {
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 209px;
-  background-color: black;
-  padding: 66px 464px 29px 464px;
+/************************ Page Error ************************/
+.pageError__title {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 18rem;
+  font-weight: 700;
+  text-align: center;
 }
-.footer_logo {
-  align-items: flex-end;
-  gap: 6px;
+.pageError__txt {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 2.25rem;
 }
-.footer_txt {
-  color: white;
-}
-
-/********************************************** Header ************************************************/
-/*********************************************************************************************************/
-.header {
-  justify-content: space-between;
-  padding: 45px 100px 50px 100px;
-  width: 100%;
-}
-.header_nav {
-  gap: 57px;
+.pageError__link {
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  text-decoration: underline;
 }
 
-/********************************************** Home ************************************************/
-/*********************************************************************************************************/
-.mainContainer {
-  background-color: #ffffff;
+/************************ Page about ************************/
+.aboutArticle__title, .aboutArticle__txt {
+  font-family: Montserrat;
+}
+.aboutArticle__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.aboutArticle__txt {
+  font-size: 18px;
 }
 
+/********************************************** Banner ************************************************/
+/*********************************************************************************************************/
 .banner {
   width: 86%;
   height: 223px;
@@ -179,4 +178,80 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/********************************************** Footer ************************************************/
+/*********************************************************************************************************/
+.footer {
+  width: 100%;
+  height: 209px;
+  background-color: black;
+  padding: 66px 464px 29px 464px;
+}
+.footer__content {
+  gap: 28px;
+  min-width: 513px;
+}
+.footer_logo {
+  align-items: flex-end;
+  gap: 6px;
+}
+.footer_txt {
+  color: white;
+}
+
+/********************************************** Header ************************************************/
+/*********************************************************************************************************/
+.header {
+  justify-content: space-between;
+  padding: 45px 100px 0 100px;
+  width: 100%;
+}
+.header_nav {
+  gap: 57px;
+}
+
+/********************************************** Home ************************************************/
+/*********************************************************************************************************/
+.mainContainer {
+  background-color: #ffffff;
+}
+
+/********************************************** about ************************************************/
+/*********************************************************************************************************/
+.mainContainerAbout {
+  gap: 38px;
+  width: 100%;
+}
+
+.aboutArticleAll {
+  gap: 30px;
+}
+
+.aboutArticle {
+  width: 71%;
+}
+.aboutArticle__title {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ff6060;
+}
+.aboutArticle__txt {
+  background: #F6F6F6;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 15px 15px 15px;
+}
+
+/********************************************** Page Error ************************************************/
+/*********************************************************************************************************/
+.pageError__container {
+  gap: 139px;
+}
+.pageError__title {
+  margin-top: 139px;
+}
+.pageError__link {
+  margin-bottom: 139px;
 }/*# sourceMappingURL=main.css.map */

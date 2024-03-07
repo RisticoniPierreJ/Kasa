@@ -1,21 +1,34 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+// import { homeBannerImg, aboutBannerImg } from "../constants/images";
+// import aboutArticlesData from "../constants/aboutArticlesData";
+
 import Header from "./Header";
 import Banner from "./Banner";
 import Footer from "./Footer";
-import PageError from "./PageError";
+import AboutArticles from "./AboutArticles";
+import PageError from "./pages/PageError";
 import Single from "./pages/Single";
+
+import homeBannerImg from "../assets/images/photos/homeBannerImg.jpeg";
+import aboutBannerImg from "../assets/images/photos/aboutBannerImg.jpeg";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: (
             <div className="mainContainer">
-                <Header />,
-                <Banner />,
+                <Header />
+                <Banner image={homeBannerImg} showText={true} />
                 <Footer />
             </div>
         ),
-        errorElement: <PageError />,
+        errorElement: (
+            <div className="mainContainer">
+                <Header />
+                <PageError />
+                <Footer />
+            </div>
+        ),
 
         children: [
             {
@@ -32,11 +45,22 @@ const router = createBrowserRouter([
                     },
                 ],
             },
-            {
-                path: "apropos",
-                element: <div>À Propos</div>,
-            },
         ],
+    },
+    {
+        path: "/apropos",
+        element: (
+            <>
+                <div className="mainContainerAbout">
+                    <Header />
+                    <Banner image={aboutBannerImg} showText={false} />
+                    <div>
+                        <AboutArticles />
+                    </div>
+                    <Footer />
+                </div>
+            </>
+        ),
     },
 ]);
 
@@ -46,24 +70,3 @@ function App() {
 
 export default App;
 
-
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Header from "./Header";
-// import PageError from "./PageError";
-// import Single from "./pages/Single";
-
-// function App() {
-//     return (
-//         <BrowserRouter>
-//             <Header />
-//             <Routes>
-//                 <Route path="/" element={<div>Home</div>} />
-//                 <Route path="/logement/*" element={<Single />} />
-//                 <Route path="/apropos" element={<div>À Propos</div>} />
-//                 <Route path="*" element={<PageError />} />
-//             </Routes>
-//         </BrowserRouter>
-//     );
-// }
-
-// export default App;
