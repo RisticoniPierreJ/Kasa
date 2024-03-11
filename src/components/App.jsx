@@ -1,26 +1,34 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-// import { homeBannerImg, aboutBannerImg } from "../constants/images";
-// import aboutArticlesData from "../constants/aboutArticlesData";
+
+// import homeBannerImg from "../assets/images/photos/homeBannerImg.jpeg";
+// import aboutBannerImg from "../assets/images/photos/aboutBannerImg.jpeg";
 
 import Header from "./Header";
-import Banner from "./Banner";
+import Home from "./pages/Home";
+import About from "./pages/About";
+// import Banner from "./Banner";
 import Footer from "./Footer";
-import AboutArticles from "./AboutArticles";
+// import AboutArticles from "./AboutArticles";
 import PageError from "./pages/PageError";
 import Single from "./pages/Single";
-
-import homeBannerImg from "../assets/images/photos/homeBannerImg.jpeg";
-import aboutBannerImg from "../assets/images/photos/aboutBannerImg.jpeg";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: (
-            <div className="mainContainer">
+            <div className="homeContainer">
                 <Header />
-                <Banner image={homeBannerImg} showText={true} />
+                <Home />
+                <Outlet />
                 <Footer />
             </div>
+
+            // <div className="homeContainer">
+            //     <Header />
+            //     <Home showBanner={true} />
+            //     <Outlet />
+            //     <Footer />
+            // </div>
         ),
         errorElement: (
             <div className="mainContainer">
@@ -45,20 +53,24 @@ const router = createBrowserRouter([
                     },
                 ],
             },
+            // {
+            //     path: "/apropos",
+            //     element: (
+            //         <>
+            //             <About />
+            //         </>
+            //     ),
+            // },
         ],
     },
     {
         path: "/apropos",
         element: (
             <>
-                <div className="mainContainerAbout">
-                    <Header />
-                    <Banner image={aboutBannerImg} showText={false} />
-                    <div>
-                        <AboutArticles />
-                    </div>
-                    <Footer />
-                </div>
+                <Header />
+                <About />
+                <Footer />
+
             </>
         ),
     },
@@ -69,4 +81,6 @@ function App() {
 }
 
 export default App;
+
+
 

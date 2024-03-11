@@ -1,8 +1,16 @@
 /********************************************** Home ************************************************/
 /*********************************************************************************************************/
-.mainContainer {
+.homeContainer {
     @extend %flex-columnCentered;
+    gap: 50px;
+    width: 100%;
     background-color: #ffffff;
+
+    &__main{
+    @extend %flex-columnCentered;
+
+        width: 100%;
+    }
 }
 
 

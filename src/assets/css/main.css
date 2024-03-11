@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.pageError__container, .aboutArticleAll, .mainContainerAbout, .mainContainer, .footer__content, .footer {
+.pageError__container, .aboutArticleAll, .aboutContainer__main, .homeContainer__main, .homeContainer, .footer__content, .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +161,6 @@ main {
   height: 223px;
   border-radius: 25px;
   position: relative;
-  border-radius: 25px;
   background: #000;
 }
 .banner_img {
@@ -213,13 +212,18 @@ main {
 
 /********************************************** Home ************************************************/
 /*********************************************************************************************************/
-.mainContainer {
+.homeContainer {
+  gap: 50px;
+  width: 100%;
   background-color: #ffffff;
+}
+.homeContainer__main {
+  width: 100%;
 }
 
 /********************************************** about ************************************************/
 /*********************************************************************************************************/
-.mainContainerAbout {
+.aboutContainer__main {
   gap: 38px;
   width: 100%;
 }

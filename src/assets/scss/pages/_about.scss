@@ -1,10 +1,19 @@
 /********************************************** about ************************************************/
 /*********************************************************************************************************/
-.mainContainerAbout{
-    @extend %flex-columnCentered;
-    gap: 38px;
-    width: 100%;
+.aboutContainer{
+
+    &__main{
+        @extend %flex-columnCentered;
+        gap: 38px;
+        width: 100%;
+
+    }
 }
+// .mainContainerAbout{
+//     @extend %flex-columnCentered;
+//     gap: 38px;
+//     width: 100%;
+// }
 
 .aboutArticleAll{
     @extend %flex-columnCentered;
