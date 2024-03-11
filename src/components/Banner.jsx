@@ -15,7 +15,7 @@ function Banner(props) {
                     className="banner_img"
                 />
                 {showText && (
-                    <p className="banner_txt">Chez vous, partout et ailleurs</p>
+                    <h1 className="banner_txt">Chez vous, partout et ailleurs</h1>
                 )}
             </div>
         </>

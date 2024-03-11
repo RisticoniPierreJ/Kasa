@@ -13,9 +13,7 @@
         "/.vscode/**"
     ],
 
-    "liveSassCompile.settings.partialsList": [
-        "/**/_*.s[ac]ss"
-    ],
+    "liveSassCompile.settings.partialsList": ["/**/_*.s[ac]ss"],
 
     "liveSassCompile.settings.autoprefix": "defaults",
     "liveSassCompile.settings.compileOnWatch": false,
@@ -24,5 +22,7 @@
     "liveSassCompile.settings.showAnnouncements": false,
 
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    }
 }

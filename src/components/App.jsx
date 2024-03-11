@@ -70,7 +70,6 @@ const router = createBrowserRouter([
                 <Header />
                 <About />
                 <Footer />
-
             </>
         ),
     },

@@ -1,0 +1,24 @@
+.collapseAll{
+    @extend %flex-columnCentered;
+    gap: 30px;
+}
+
+.collapse {
+    @extend %flex-column;
+    width: 71%;
+
+    &__title {
+        @extend %flex-row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px 15px;
+        background: $background-main;
+    }
+
+    &__txt{
+        background: $background-secondary;
+        border-radius: 0 0 5px 5px;
+        padding: 10px 15px 15px 15px;
+    }
+}

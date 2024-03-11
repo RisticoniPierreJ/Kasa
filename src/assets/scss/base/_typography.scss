@@ -6,7 +6,7 @@
     font-family: Montserrat;
 }
 
-/************************ Special Cases ************************/
+/************************ Layouts ************************/
 .header {
     &_nav {
         font-family: Montserrat;
@@ -38,6 +38,36 @@
     }
 }
 
+/************************ Page Home ************************/
+.ads {
+    &__title {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 1.125rem;
+        font-weight: 700;
+        line-height: 142.6%;
+    }
+}
+
+/************************ Page about ************************/
+.collapse {
+    @extend %flex-column;
+    
+    &__title, &__txt {
+        font-family : Montserrat;
+    }
+    
+    &__title {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    &__txt {
+        font-size: 18px;
+    }
+}
+
 /************************ Page Error ************************/
 
 .pageError {
@@ -59,24 +89,5 @@
         font-family: Montserrat;
         font-size: 2.25rem;
         text-decoration: underline;
-    }
-}
-
-/************************ Page about ************************/
-.aboutArticle {
-    @extend %flex-column;
-
-    &__title, &__txt {
-        font-family : Montserrat;
-    }
-    
-    &__title {
-        color: #fff;
-        font-size: 24px;
-        font-weight: 700;
-    }
-
-    &__txt {
-        font-size: 18px;
     }
 }

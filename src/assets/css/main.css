@@ -1,18 +1,18 @@
 /********************************************** Placeholders ************************************************/
 /*********************************************************************************************************/
-.aboutArticle {
+.collapse {
   display: flex;
   flex-direction: column;
 }
 
-.pageError__container, .aboutArticleAll, .aboutContainer__main, .homeContainer__main, .homeContainer, .footer__content, .footer {
+.pageError__container, .aboutContainer__main, .homeContainer__main, .homeContainer, .footer__content, .footer, .collapseAll {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.aboutArticle__title, .header_nav, .footer_logo {
+.header_nav, .footer_logo, .collapse__title {
   display: flex;
 }
 
@@ -97,7 +97,7 @@ main {
   font-family: Montserrat;
 }
 
-/************************ Special Cases ************************/
+/************************ Layouts ************************/
 .header_nav {
   font-family: Montserrat;
   font-size: 24px;
@@ -122,6 +122,28 @@ main {
   font-weight: 500;
 }
 
+/************************ Page Home ************************/
+.ads__title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 142.6%;
+}
+
+/************************ Page about ************************/
+.collapse__title, .collapse__txt {
+  font-family: Montserrat;
+}
+.collapse__title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.collapse__txt {
+  font-size: 18px;
+}
+
 /************************ Page Error ************************/
 .pageError__title {
   color: #ff6060;
@@ -139,19 +161,6 @@ main {
   font-family: Montserrat;
   font-size: 2.25rem;
   text-decoration: underline;
-}
-
-/************************ Page about ************************/
-.aboutArticle__title, .aboutArticle__txt {
-  font-family: Montserrat;
-}
-.aboutArticle__title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-}
-.aboutArticle__txt {
-  font-size: 18px;
 }
 
 /********************************************** Banner ************************************************/
@@ -177,6 +186,49 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.collapseAll {
+  gap: 30px;
+}
+
+.collapse {
+  width: 71%;
+}
+.collapse__title {
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background: #ff6060;
+}
+.collapse__txt {
+  background: #F6F6F6;
+  border-radius: 0 0 5px 5px;
+  padding: 10px 15px 15px 15px;
+}
+
+.ads {
+  height: 340px;
+  background: #ff6060;
+  border-radius: 10px;
+  position: relative;
+}
+.ads__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.ads__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 /********************************************** Footer ************************************************/
@@ -210,6 +262,18 @@ main {
   gap: 57px;
 }
 
+.adsContainer {
+  background: #F6F6F6;
+  width: 86%;
+  border-radius: 25px;
+  padding: 56px 50px 43px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 50px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
 /********************************************** Home ************************************************/
 /*********************************************************************************************************/
 .homeContainer {
@@ -218,6 +282,7 @@ main {
   background-color: #ffffff;
 }
 .homeContainer__main {
+  gap: 43px;
   width: 100%;
 }
 
@@ -226,26 +291,6 @@ main {
 .aboutContainer__main {
   gap: 38px;
   width: 100%;
-}
-
-.aboutArticleAll {
-  gap: 30px;
-}
-
-.aboutArticle {
-  width: 71%;
-}
-.aboutArticle__title {
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  padding: 10px 15px;
-  background: #ff6060;
-}
-.aboutArticle__txt {
-  background: #F6F6F6;
-  border-radius: 0 0 5px 5px;
-  padding: 10px 15px 15px 15px;
 }
 
 /********************************************** Page Error ************************************************/

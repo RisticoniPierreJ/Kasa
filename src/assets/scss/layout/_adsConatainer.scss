@@ -1,0 +1,11 @@
+.adsContainer{
+    background: $background-secondary;
+    width: 86%;
+    border-radius: 25px;
+    padding: 56px 50px 43px 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+    column-gap: 60px;
+}

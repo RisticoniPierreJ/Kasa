@@ -6,11 +6,12 @@
     width: 100%;
     background-color: #ffffff;
 
-    &__main{
-    @extend %flex-columnCentered;
-
+    &__main {
+        @extend %flex-columnCentered;
+        gap: 43px;
+        // margin-top: 50px;
         width: 100%;
+
     }
 }
-
 
