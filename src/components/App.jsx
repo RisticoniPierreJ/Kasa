@@ -10,7 +10,7 @@ import About from "./pages/About";
 import Footer from "./Footer";
 // import AboutArticles from "./AboutArticles";
 import PageError from "./pages/PageError";
-import Single from "./pages/Single";
+import Housing from "./pages/Housing";
 
 const router = createBrowserRouter([
     {
@@ -22,13 +22,6 @@ const router = createBrowserRouter([
                 <Outlet />
                 <Footer />
             </div>
-
-            // <div className="homeContainer">
-            //     <Header />
-            //     <Home showBanner={true} />
-            //     <Outlet />
-            //     <Footer />
-            // </div>
         ),
         errorElement: (
             <div className="mainContainer">
@@ -39,20 +32,20 @@ const router = createBrowserRouter([
         ),
 
         children: [
-            {
-                path: "logement",
-                element: <Outlet />,
-                children: [
-                    {
-                        path: "",
-                        element: <div>Logement</div>,
-                    },
-                    {
-                        path: ":id",
-                        element: <Single />,
-                    },
-                ],
-            },
+            // {
+            //     path: "logement",
+            //     element: <Outlet />,
+            //     children: [
+            //         {
+            //             path: "",
+            //             element: <div>Logement</div>,
+            //         },
+            //         {
+            //             path: ":id",
+            //             element: <Single />,
+            //         },
+            //     ],
+            // },
             // {
             //     path: "/apropos",
             //     element: (
@@ -64,12 +57,34 @@ const router = createBrowserRouter([
         ],
     },
     {
+        path: "/logement",
+        element: (
+            <div className="logementContainer">
+                <Header />
+                <Outlet />
+                <Footer />
+            </div>
+        ),
+        children: [
+            // {
+            //     path: "",
+            //     element: <div>Logement</div>,
+            // },
+            {
+                path: ":id",
+                element: <Housing />,
+            },
+        ],
+    },
+    {
         path: "/apropos",
         element: (
             <>
-                <Header />
-                <About />
-                <Footer />
+                <div className="aboutContainer">
+                    <Header />
+                    <About />
+                    <Footer />
+                </div>
             </>
         ),
     },
@@ -80,6 +95,3 @@ function App() {
 }
 
 export default App;
-
-
-

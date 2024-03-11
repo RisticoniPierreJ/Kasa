@@ -10,6 +10,11 @@
 @import "components/banner";
 @import "components/collapse";
 @import "components/ads";
+@import "components/housingHost";
+@import "components/housingInfo";
+@import "components/housingRating";
+@import "components/housingTags";
+@import "components/housingTitle";
 
 @import "layout/footer";
 @import "layout/header";
@@ -18,3 +23,5 @@
 @import "pages/home";
 @import "pages/about";
 @import "pages/pageError";
+@import "pages/logement";
+@import "pages/housing";

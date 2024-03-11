@@ -49,6 +49,48 @@
     }
 }
 
+/************************ Page Housing ************************/
+.housingTitle {
+
+    & h1, & p {
+        font-family: Montserrat;
+        line-height: 142.6%;
+
+    }
+
+    & h1 {
+        color: $text-mainTheme;
+        font-size: 2.25rem;
+    }
+
+    & p {
+        color: #000;
+        font-size: 1.125rem;
+    }
+}
+
+.host {
+
+    & p {
+        color: $text-mainTheme;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 1.125rem;
+        line-height: 142.6%;
+    }
+}
+
+.tags {
+
+    & li {
+        color: #FFF;
+        font-family: Montserrat;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 142.6%;
+    }
+}
+
 /************************ Page about ************************/
 .collapse {
     @extend %flex-column;
@@ -72,7 +114,7 @@
 
 .pageError {
     &__title {
-        color: #ff6060;
+        color: $text-mainTheme;
         font-family: Montserrat;
         font-size: 18rem;
         font-weight: 700;
@@ -80,7 +122,7 @@
     }
 
     &__txt {
-        color: #ff6060;
+        color: $text-mainTheme;
         font-family: Montserrat;
         font-size: 2.25rem;
     }

@@ -1,0 +1,17 @@
+/********************************************** HouseTags Component *****************************************/
+/*********************************************************************************************************/
+.tags{
+
+    & ul{
+        @extend %flex-row;
+        gap: 10px;
+    }
+
+    & li{
+        @extend %flex-rowCentered  ;
+        width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        background: $background-main;
+    }
+}
