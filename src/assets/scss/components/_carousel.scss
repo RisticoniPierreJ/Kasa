@@ -1,0 +1,39 @@
+/********************************************** Carousel *****************************************/
+/*********************************************************************************************************/
+.carousel {
+    width: 100%;
+    height: 415px;
+    background: $background-main;
+    border-radius: 25px;
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+
+
+    &__left, &__right {
+        cursor: pointer;
+    }
+
+    &__left {
+        margin-left: 20px;
+    }
+
+    &__right {
+        margin-right: 20px;
+    }
+}

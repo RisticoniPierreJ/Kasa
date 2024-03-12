@@ -4,6 +4,7 @@ import "../../assets/css/main.css";
 import { useParams } from "react-router-dom";
 import adsData from "../../datas/adsData";
 import HousingInfo from "../HousingInfo";
+import Carousel from "../Carousel";
 
 function Housing() {
     const { id } = useParams();
@@ -18,6 +19,7 @@ function Housing() {
     // Render the HousingInfo component and pass the ad as a prop
     return (
         <div className="housingContainer">
+            <Carousel pictures={ad.pictures} />
             <HousingInfo info={ad} />
         </div>
     );
