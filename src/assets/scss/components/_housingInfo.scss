@@ -1,19 +1,17 @@
 /********************************************** HousingInfo Component *****************************************/
 /*********************************************************************************************************/
 .housingInfo{
-    width: 100%;
     @extend %flex-column;
     gap: 20px;
+    width: 100%;
 
-    &__top{
+    &__top, &__middle, &__bottom{
         @extend %flex-row;
         justify-content: space-between;
         width: 100%;
     }
 
-    &__middle{
-        @extend %flex-row;
-        justify-content: space-between;
-        width: 100%;
+    &__bottom{
+        gap: 76px;
     }
 }

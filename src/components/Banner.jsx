@@ -4,7 +4,6 @@ import "../assets/css/main.css";
 function Banner(props) {
     let showText = props.showText;
     const image = props.image;
-    // showText = true;
 
     return (
         <>

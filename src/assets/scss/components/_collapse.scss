@@ -1,26 +1,100 @@
 /********************************************** Collapse Component *****************************************/
 /*********************************************************************************************************/
-.collapseAll{
+// .collapseAll {
+//     @extend %flex-columnCentered;
+//     gap: 30px;
+//     width: 100%;
+
+// }
+
+
+// .collapse {
+//     @extend %flex-column;
+//     width: 71%;
+//     overflow: hidden;
+
+//     &__title {
+//         @extend %flex-row;
+//         justify-content: space-between;
+//         align-items: center;
+//         width: 100%;
+//         border-radius: 5px;
+//         padding: 10px 15px;
+//         background: $background-main;
+//         z-index: 2;
+//         cursor: pointer;
+//     }
+
+//     &__txt {
+//         background: $background-secondary;
+//         border-radius: 0 0 5px 5px;
+//         padding: 10px 15px 15px 15px;
+//         animation: slideDown 0.3s ease-in-out;
+//     }
+
+//     @keyframes slideDown {
+//         from {
+//             transform: translateY(-100%);
+//         }
+//     }
+// }
+
+// .fa-solid.fa-chevron-up.rotate {
+//     transform: rotate(180deg);
+//     transition: transform 0.3s ease-in-out;
+// }
+
+
+
+// THE GOOD ONE 
+
+.collapseAll {
     @extend %flex-columnCentered;
     gap: 30px;
+    width: 100%;
 }
 
 .collapse {
     @extend %flex-column;
     width: 71%;
+    overflow: hidden;
 
     &__title {
         @extend %flex-row;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         border-radius: 5px;
         padding: 10px 15px;
         background: $background-main;
+        z-index: 2;
+        cursor: pointer;
     }
 
-    &__txt{
+    &__txt {
         background: $background-secondary;
         border-radius: 0 0 5px 5px;
+        max-height: 0;
+        overflow: hidden;
+        // transition: max-height 2s ease-in-out;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    &__txt.show {
+        max-height: 250px; 
+        // max-height: 1000px; 
+    }
+
+    &__txt-inner {
         padding: 10px 15px 15px 15px;
     }
 }
+
+.fa-solid.fa-chevron-up {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-solid.fa-chevron-up.rotate {
+    transform: rotate(180deg);
+}
+

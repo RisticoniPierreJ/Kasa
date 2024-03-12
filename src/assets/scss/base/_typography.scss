@@ -52,7 +52,8 @@
 /************************ Page Housing ************************/
 .housingTitle {
 
-    & h1, & p {
+    & h1,
+    & p {
         font-family: Montserrat;
         line-height: 142.6%;
 
@@ -87,24 +88,24 @@
         font-family: Montserrat;
         font-size: 0.875rem;
         font-weight: 700;
-        line-height: 142.6%;
     }
 }
 
 /************************ Page about ************************/
 .collapse {
     @extend %flex-column;
-    
-    &__title, &__txt {
-        font-family : Montserrat;
+
+    &__title,
+    &__txt {
+        font-family: Montserrat;
     }
-    
+
     &__title {
         color: #fff;
         font-size: 24px;
         font-weight: 700;
     }
-    
+
     &__txt {
         font-size: 18px;
     }

@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.header_nav, .footer_logo, .tags ul, .housingInfo__middle, .housingInfo__top, .host, .collapse__title {
+.header_nav, .footer_logo, .tags ul, .housingInfo__top, .housingInfo__middle, .housingInfo__bottom, .host, .collapse__title {
   display: flex;
 }
 
@@ -160,7 +160,6 @@ main {
   font-family: Montserrat;
   font-size: 0.875rem;
   font-weight: 700;
-  line-height: 142.6%;
 }
 
 /************************ Page about ************************/
@@ -226,22 +225,43 @@ main {
 /*********************************************************************************************************/
 .collapseAll {
   gap: 30px;
+  width: 100%;
 }
 
 .collapse {
   width: 71%;
+  overflow: hidden;
 }
 .collapse__title {
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   border-radius: 5px;
   padding: 10px 15px;
   background: #ff6060;
+  z-index: 2;
+  cursor: pointer;
 }
 .collapse__txt {
   background: #F6F6F6;
   border-radius: 0 0 5px 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+.collapse__txt.show {
+  max-height: 250px;
+}
+.collapse__txt-inner {
   padding: 10px 15px 15px 15px;
+}
+
+.fa-solid.fa-chevron-up {
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-solid.fa-chevron-up.rotate {
+  transform: rotate(180deg);
 }
 
 .ads {
@@ -286,16 +306,15 @@ main {
 /********************************************** HousingInfo Component *****************************************/
 /*********************************************************************************************************/
 .housingInfo {
-  width: 100%;
   gap: 20px;
+  width: 100%;
 }
-.housingInfo__top {
+.housingInfo__top, .housingInfo__middle, .housingInfo__bottom {
   justify-content: space-between;
   width: 100%;
 }
-.housingInfo__middle {
-  justify-content: space-between;
-  width: 100%;
+.housingInfo__bottom {
+  gap: 76px;
 }
 
 /********************************************** HouseRating Component *****************************************/
@@ -313,8 +332,7 @@ main {
   gap: 10px;
 }
 .tags li {
-  width: 115px;
-  height: 25px;
+  padding: 6px 40px;
   border-radius: 10px;
   background: #ff6060;
 }
