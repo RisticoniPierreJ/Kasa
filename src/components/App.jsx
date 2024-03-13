@@ -1,14 +1,9 @@
+import "../assets/css/main.css";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-
-// import homeBannerImg from "../assets/images/photos/homeBannerImg.jpeg";
-// import aboutBannerImg from "../assets/images/photos/aboutBannerImg.jpeg";
-
 import Header from "./Header";
 import Home from "./pages/Home";
 import About from "./pages/About";
-// import Banner from "./Banner";
 import Footer from "./Footer";
-// import AboutArticles from "./AboutArticles";
 import PageError from "./pages/PageError";
 import Housing from "./pages/Housing";
 
@@ -30,31 +25,6 @@ const router = createBrowserRouter([
                 <Footer />
             </div>
         ),
-
-        children: [
-            // {
-            //     path: "logement",
-            //     element: <Outlet />,
-            //     children: [
-            //         {
-            //             path: "",
-            //             element: <div>Logement</div>,
-            //         },
-            //         {
-            //             path: ":id",
-            //             element: <Single />,
-            //         },
-            //     ],
-            // },
-            // {
-            //     path: "/apropos",
-            //     element: (
-            //         <>
-            //             <About />
-            //         </>
-            //     ),
-            // },
-        ],
     },
     {
         path: "/logement",
@@ -66,10 +36,6 @@ const router = createBrowserRouter([
             </div>
         ),
         children: [
-            // {
-            //     path: "",
-            //     element: <div>Logement</div>,
-            // },
             {
                 path: ":id",
                 element: <Housing />,

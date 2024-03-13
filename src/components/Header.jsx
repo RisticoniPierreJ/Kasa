@@ -1,17 +1,17 @@
-// import { NavLink, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import logo from "../assets/images/logos/LOGO.svg";
 import "../assets/css/main.css";
+import { useLocation, Link } from "react-router-dom";
+import logo from "../assets/images/logos/LOGO.svg";
 
 function Header() {
+    const location = useLocation();
+
     return (
         <>
             <header className="header">
                 <img src={logo} alt="Logo Kasa" />
                 <nav className="header_nav">
-                    <NavLink to="/">ACCUEIL</NavLink>
-                    {/* <NavLink to="/logement">Logements</NavLink> */}
-                    <NavLink to="/apropos">À PROPOS</NavLink>
+                    <Link to="/" className={location.pathname === "/" ? 'header__navLink-active' : ''}>ACCUEIL</Link>
+                    <Link to="/apropos" className={location.pathname === "/apropos" ? 'header__navLink-active' : ''}>À PROPOS</Link>
                 </nav>
             </header>
         </>

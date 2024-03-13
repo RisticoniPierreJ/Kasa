@@ -37,21 +37,26 @@ function Carousel({ pictures }) {
                 src={pictures[currentImageIndex]}
                 alt="carousel"
             />
-            <div className="arrows">
-                <img
-                    src={leftArrow}
-                    alt="leftArrow"
-                    className="arrows__left"
-                    onClick={goLeft}
-                />
+            {pictures.length > 1 && (
+            <>
+                <div className="carousel__counter">{currentImageIndex + 1}/{pictures.length}</div>
+                <div className="arrows">
+                    <img
+                        src={leftArrow}
+                        alt="leftArrow"
+                        className="arrows__left"
+                        onClick={goLeft}
+                    />
 
-                <img
-                    src={rightArrow}
-                    alt="rightArrow"
-                    className="arrows__right"
-                    onClick={goRight}
-                />
-            </div>
+                    <img
+                        src={rightArrow}
+                        alt="rightArrow"
+                        className="arrows__right"
+                        onClick={goRight}
+                    />
+                </div>
+            </>
+        )}
         </div>
     );
 }

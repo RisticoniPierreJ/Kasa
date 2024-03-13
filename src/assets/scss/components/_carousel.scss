@@ -3,11 +3,11 @@
 .carousel {
     width: 100%;
     height: 415px;
-    background: $background-main;
+    // background: $background-main;
     border-radius: 25px;
     position: relative;
 
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 375px) {
         height: 255px;
         border-radius: 10px;
     }
@@ -18,8 +18,21 @@
         object-fit: cover;
         border-radius: 25px;
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 375px) {
             border-radius: 10px;
+        }
+    }
+
+    &__counter {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 1.125rem;
+
+        @media screen and (max-width: 375px) {
+            display: none;
         }
     }
 }
@@ -33,19 +46,20 @@
     justify-content: space-between;
     z-index: 1;
 
-    @media screen and (max-width: 375px){
+    @media screen and (max-width: 375px) {
         height: 24px;
     }
 
 
-    &__left, &__right {
+    &__left,
+    &__right {
         cursor: pointer;
     }
 
     &__left {
         margin-left: 20px;
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 375px) {
             margin-left: 6px;
         }
     }
@@ -53,7 +67,7 @@
     &__right {
         margin-right: 20px;
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 375px) {
             margin-right: 6px;
         }
     }

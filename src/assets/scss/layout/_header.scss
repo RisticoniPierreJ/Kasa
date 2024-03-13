@@ -19,9 +19,17 @@
         }
     }
 
-    & img{
-        @media screen and (max-width: 375px){
+    & img {
+        @media screen and (max-width: 375px) {
             width: 145px;
         }
     }
+
+    &__navLink-active {
+        text-decoration: underline;
+    }
+}
+
+.nav-link-active {
+    text-decoration: underline;
 }
