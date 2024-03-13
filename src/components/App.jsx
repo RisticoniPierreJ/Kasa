@@ -59,7 +59,7 @@ const router = createBrowserRouter([
     {
         path: "/logement",
         element: (
-            <div className="logementContainer">
+            <div className="housingContainer">
                 <Header />
                 <Outlet />
                 <Footer />

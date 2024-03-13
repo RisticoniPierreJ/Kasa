@@ -1,15 +1,27 @@
 /********************************************** Header ************************************************/
 /*********************************************************************************************************/
-
 .header {
     @extend %flex-rowCentered;
     justify-content: space-between;
     padding: 45px 100px 0 100px;
-    // padding: 45px 100px 50px 100px;
     width: 100%;
+
+    @media screen and (max-width: 375px) {
+        padding: 20px 20px 0 20px;
+    }
 
     &_nav {
         @extend %flex-row;
         gap: 57px;
+
+        @media screen and (max-width: 375px) {
+            gap: 26px;
+        }
+    }
+
+    & img{
+        @media screen and (max-width: 375px){
+            width: 145px;
+        }
     }
 }

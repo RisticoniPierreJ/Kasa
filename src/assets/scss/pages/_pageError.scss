@@ -5,6 +5,10 @@
     &__container {
         @extend %flex-columnCentered;
         gap: 139px;
+
+        @media screen and (max-width: 375px){
+            gap: 113px;
+        }
     }
 
     &__title {

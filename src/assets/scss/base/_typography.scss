@@ -10,9 +10,12 @@
 .header {
     &_nav {
         font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 142.6%;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.75rem;
+        }
     }
 }
 
@@ -21,20 +24,28 @@
         color: #fff;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: Montserrat;
-        font-size: 48px;
+        font-size: 3rem;
         font-weight: 700;
+        
         // VOIR AVEC HUGO
         -webkit-text-stroke-color: #000;
         text-align: center;
+
+        @media screen and (max-width: 375px) {
+            font-size: 1.5rem;
+            text-align: left;
+        }
     }
 }
 
 .footer {
     &_txt {
         font-family: Montserrat;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
+        font-size: 1.5rem;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.75rem;
+        }
     }
 }
 
@@ -62,11 +73,19 @@
     & h1 {
         color: $text-mainTheme;
         font-size: 2.25rem;
+
+        @media screen and (max-width: 375px) {
+            font-size: 1.125rem;
+        }
     }
 
     & p {
         color: #000;
         font-size: 1.125rem;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.875rem;
+        }
     }
 }
 
@@ -78,6 +97,10 @@
         font-family: Montserrat;
         font-size: 1.125rem;
         line-height: 142.6%;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.75rem;
+        }
     }
 }
 
@@ -88,6 +111,10 @@
         font-family: Montserrat;
         font-size: 0.875rem;
         font-weight: 700;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.625rem;
+        }
     }
 }
 
@@ -104,10 +131,20 @@
         color: #fff;
         font-size: 24px;
         font-weight: 700;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.813rem;
+        }
     }
 
     &__txt {
         font-size: 18px;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.688rem;
+            line-height: 142.6%;
+
+        }
     }
 }
 
@@ -120,17 +157,30 @@
         font-size: 18rem;
         font-weight: 700;
         text-align: center;
+
+        @media screen and (max-width: 375px) {
+            font-size: 6rem;
+        }
     }
 
     &__txt {
         color: $text-mainTheme;
         font-family: Montserrat;
         font-size: 2.25rem;
+
+        @media screen and (max-width: 375px) {
+            font-size: 1.125rem;
+            text-align: center;
+        }
     }
 
     &__link {
         font-family: Montserrat;
         font-size: 2.25rem;
         text-decoration: underline;
+
+        @media screen and (max-width: 375px) {
+            font-size: 0.875rem;
+        }
     }
 }

@@ -5,21 +5,23 @@ import HousingTags from "./HousingTags";
 import HousingRating from "./HousingRating";
 import Collapse from "./Collapse";
 
-
 function HousingInfo({ info }) {
     return (
         <section className="housingInfo">
             <div className="housingInfo__top">
-                <HousingTitle title={info.title} location={info.location} />
-                <HousingHost host={info.host} />
+                <div className="housingInfo__titleTags">
+                    <HousingTitle title={info.title} location={info.location} />
+                    <HousingTags tags={info.tags} />
+                </div>
+                <div className="housingInfo__hostRating">
+                    <HousingHost host={info.host} className="housingHost"/>
+                    <HousingRating rating={info.rating} className="housingRating"/>
+                </div>
             </div>
-            <div className="housingInfo__middle">
-                <HousingTags tags={info.tags} />
-                <HousingRating rating={info.rating} />
-            </div>
+
             <div className="housingInfo__bottom">
-                <Collapse title="Description" text={info.description}/>
-                <Collapse title="Équipement" text={info.equipments}/>
+                <Collapse title="Description" text={info.description} />
+                <Collapse title="Équipement" text={info.equipments} />
             </div>
         </section>
     );

@@ -9,9 +9,9 @@ function Header() {
             <header className="header">
                 <img src={logo} alt="Logo Kasa" />
                 <nav className="header_nav">
-                    <NavLink to="/">Acceuil</NavLink>
+                    <NavLink to="/">ACCUEIL</NavLink>
                     {/* <NavLink to="/logement">Logements</NavLink> */}
-                    <NavLink to="/apropos">À Propos</NavLink>
+                    <NavLink to="/apropos">À PROPOS</NavLink>
                 </nav>
             </header>
         </>

@@ -10,11 +10,14 @@
         width: 64px;
         height: 64px;
         border-radius: 50%;
+
+        @media screen and (max-width: 375px){
+            width: 32px;
+            height: 32px;
+        }
     }
 
     & p{
         width: 90px;
-        // height: 52px;
-        // padding-right: 20px;
     }
 }

@@ -5,13 +5,48 @@
     gap: 20px;
     width: 100%;
 
-    &__top, &__middle, &__bottom{
+    &__top, &__bottom{
         @extend %flex-row;
         justify-content: space-between;
         width: 100%;
+
+        @media screen and (max-width: 375px){
+            flex-direction: column;
+            // align-items: center;
+            gap: 14px;
+        }
+    }
+
+    
+    &__titleTags, &__hostRating{
+        @extend %flex-column;
+        gap: 20px;
+    }
+
+    &__titleTags{
+
+        @media screen and (max-width: 375px){
+            gap: 10px;
+        }
+    }
+    &__hostRating{
+        align-items: flex-end;
+
+        @media screen and (max-width: 375px){
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            .housingRating { order: 1; }
+            .housingHost { order: 2; }
+        }
     }
 
     &__bottom{
         gap: 76px;
+
+        @media screen and (max-width: 375px){
+            gap: 20px;
+        }
     }
 }

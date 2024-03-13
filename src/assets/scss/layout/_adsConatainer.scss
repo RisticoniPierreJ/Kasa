@@ -1,8 +1,8 @@
 /********************************************** AdsContainer Component *****************************************/
 /*********************************************************************************************************/
-.adsContainer{
+.adsContainer {
     background: $background-secondary;
-    width: 86%;
+    width: 100%;
     border-radius: 25px;
     padding: 56px 50px 43px 50px;
 
@@ -10,4 +10,23 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
     column-gap: 60px;
+
+    @media screen and (max-width: 375px) {
+        background: none;
+        border-radius: unset;
+        padding: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        background: none;
+        border-radius: unset;
+        padding: unset;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
 }

@@ -4,10 +4,30 @@
     @extend %flex-columnCentered;
     gap: 50px;
 
+    @media screen and (max-width: 375px){
+        gap: 20px;
+    }    
+
     &__main{
         @extend %flex-columnCentered;
         gap: 38px;
         width: 100%;
+        padding: 0 7%;
+
+        @media screen and (max-width: 375px){
+            gap: 20px;
+            padding: 0 5.5%;
+        }
+    }
+}
+
+.collapseAll {
+    @extend %flex-columnCentered;
+    gap: 30px;
+    width: 100%;
+
+    @media screen and (max-width: 375px){
+        gap: 20px;
     }
 }
 

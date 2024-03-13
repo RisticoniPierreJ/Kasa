@@ -18,7 +18,7 @@ function Housing() {
 
     // Render the HousingInfo component and pass the ad as a prop
     return (
-        <div className="housingContainer">
+        <div className="housingContainer__main">
             <Carousel pictures={ad.pictures} />
             <HousingInfo info={ad} />
         </div>

@@ -4,6 +4,12 @@
     border-radius: 10px;
     position: relative;
 
+    @media screen and (max-width: 375px){
+        height: 255px;
+        background: none;
+
+    }
+
     
     &__img{
         width: 100%;

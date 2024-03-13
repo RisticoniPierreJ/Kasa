@@ -5,13 +5,12 @@
     & ul {
         @extend %flex-row;
         gap: 10px;
+        flex-wrap: wrap;
     }
 
     & li {
         @extend %flex-rowCentered;
-        // width: 115px;
-        // height: 25px;
-        padding: 6px 40px;
+        padding: 6px 9%;
         border-radius: 10px;
         background: $background-main;
     }
