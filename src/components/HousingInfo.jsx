@@ -14,8 +14,11 @@ function HousingInfo({ info }) {
                     <HousingTags tags={info.tags} />
                 </div>
                 <div className="housingInfo__hostRating">
-                    <HousingHost host={info.host} className="housingHost"/>
-                    <HousingRating rating={info.rating} className="housingRating"/>
+                    <HousingHost host={info.host} className="housingHost" />
+                    <HousingRating
+                        rating={info.rating}
+                        className="housingRating"
+                    />
                 </div>
             </div>
 

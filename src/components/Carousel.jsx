@@ -19,13 +19,12 @@ function Carousel({ pictures }) {
     // const goRight = () => {
     //     setCurrentImageIndex((oldIndex) => (oldIndex + 1) % pictures.length);
     // };
-
     const goRight = () => {
         setCurrentImageIndex((oldIndex) => {
-            if (oldIndex + 1 >= pictures.length) { // if the next index is out of bounds
-                return 0; // wrap around to the first image
+            if (oldIndex + 1 >= pictures.length) { 
+                return 0; 
             } else {
-                return oldIndex + 1; // otherwise, go to the next image
+                return oldIndex + 1; 
             }
         });
     };
@@ -47,7 +46,6 @@ function Carousel({ pictures }) {
                         className="arrows__left"
                         onClick={goLeft}
                     />
-
                     <img
                         src={rightArrow}
                         alt="rightArrow"

@@ -1,29 +1,26 @@
-// import "../assets/css/main.css";
 import "../../assets/css/main.css";
-
 import { useParams } from "react-router-dom";
 import adsData from "../../datas/adsData";
 import HousingInfo from "../HousingInfo";
 import Carousel from "../Carousel";
+import PageError from "./PageError";
 
 function Housing() {
     const { id } = useParams();
     const ad = adsData.find((ad) => ad.id === id);
     // const ad = adsData.find((ad) => ad.id === Number(id));
 
-    // If no ad was found, render a message
     if (!ad) {
-        return <div>Ad not found</div>;
+        return <PageError />;
     }
 
-    // Render the HousingInfo component and pass the ad as a prop
+    // Rendu de HousingInfo avec ad comme prop
     return (
         <div className="housingContainer__main">
             <Carousel pictures={ad.pictures} />
             <HousingInfo info={ad} />
         </div>
     );
-    
 }
 
 export default Housing;

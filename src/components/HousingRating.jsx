@@ -1,8 +1,5 @@
 import "../assets/css/main.css";
 
-
-import "../assets/css/main.css";
-
 function HousingRating({ rating, className }) {
     return (
         <div className= {`rating ${className}`}>
