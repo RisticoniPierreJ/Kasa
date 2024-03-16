@@ -1,5 +1,5 @@
+import "../assets/css/main.css";
 import { NavLink } from "react-router-dom";
-import "../../assets/css/main.css";
 
 
 function PageError() {

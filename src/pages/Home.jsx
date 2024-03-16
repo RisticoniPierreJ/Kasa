@@ -1,6 +1,6 @@
-import Banner from "../Banner";
-import homeBannerImg from "../../assets/images/photos/homeBannerImg.jpeg";
-import AdsContainer from "../AdsContainer"
+import Banner from "../components/layout/Banner";
+import homeBannerImg from "../assets/images/photos/homeBannerImg.jpeg";
+import AdsContainer from "../components/home/AdsContainer";
 
 function Home() {
     return (

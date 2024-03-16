@@ -1,5 +1,6 @@
+import "../../assets/css/main.css";
 import React, { useState } from "react";
-import "../assets/css/main.css";
+
 
 function Collapse(props) {
     const title = props.title;

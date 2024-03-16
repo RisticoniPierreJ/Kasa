@@ -1,4 +1,4 @@
-import "../assets/css/main.css";
+import "../../assets/css/main.css";
 
 function Banner(props) {
     let showText = props.showText;

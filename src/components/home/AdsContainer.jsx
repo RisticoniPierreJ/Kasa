@@ -1,4 +1,4 @@
-import "../assets/css/main.css";
+import "../../assets/css/main.css";
 import Ads from "./Ads";
 
 function AdsContainer() {

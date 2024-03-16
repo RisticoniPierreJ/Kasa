@@ -1,9 +1,9 @@
-import "../assets/css/main.css";
+import "../../assets/css/main.css";
 import HousingTitle from "./HousingTitle";
 import HousingHost from "./HousingHost";
 import HousingTags from "./HousingTags";
 import HousingRating from "./HousingRating";
-import Collapse from "./Collapse";
+import Collapse from "../layout/Collapse";
 
 function HousingInfo({ info }) {
     return (

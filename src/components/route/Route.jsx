@@ -1,11 +1,11 @@
-import "../assets/css/main.css";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-import Header from "./Header";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Footer from "./Footer";
-import PageError from "./pages/PageError";
-import Housing from "./pages/Housing";
+import "../../assets/css/main.css";
+import { createBrowserRouter, Outlet } from "react-router-dom";
+import Header from "../layout/Header";
+import Home from "../../pages/Home";
+import About from "../../pages/About";
+import Footer from "../layout/Footer";
+import PageError from "../../pages/PageError";
+import Housing from "../../pages/Housing";
 
 const router = createBrowserRouter([
     {
@@ -55,8 +55,4 @@ const router = createBrowserRouter([
     },
 ]);
 
-function App() {
-    return <RouterProvider router={router} />;
-}
-
-export default App;
+export default router;

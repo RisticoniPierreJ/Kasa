@@ -1,6 +1,6 @@
-import "../assets/css/main.css";
-import leftArrow from "../assets/images/icons/leftArrow.svg";
-import rightArrow from "../assets/images/icons/rightArrow.svg";
+import "../../assets/css/main.css";
+import leftArrow from "../../assets/images/icons/leftArrow.svg";
+import rightArrow from "../../assets/images/icons/rightArrow.svg";
 import React, { useState } from "react";
 
 function Carousel({ pictures }) {
