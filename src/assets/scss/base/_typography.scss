@@ -1,87 +1,86 @@
 /********************************************** Typography ************************************************/
 /*********************************************************************************************************/
 
-/************************ Global ************************/
-* {
-    font-family: Montserrat;
-}
 
 /************************ Layouts ************************/
+.header__nav, .banner__txt, .footer__txt {
+    @extend %font-common;
+}
+
 .header {
+
     &_nav {
-        font-family: Montserrat;
-        font-size: 1.5rem;
-        line-height: 142.6%;
+        font-size: $font-size-large;
 
         @media screen and (max-width: 375px) {
-            font-size: 0.75rem;
+            font-size: $font-size-small;
         }
     }
 }
 
 .banner {
+
     &_txt {
-        color: #fff;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-family: Montserrat;
         font-size: 3rem;
         font-weight: 700;
+        color: $font-color-light;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
         
         // VOIR AVEC HUGO
-        -webkit-text-stroke-color: #000;
-        text-align: center;
+        -webkit-text-stroke-color: $font-color-dark;
 
         @media screen and (max-width: 375px) {
-            font-size: 1.5rem;
+            font-size: $font-size-large;
             text-align: left;
         }
     }
 }
 
 .footer {
+    
     &_txt {
-        font-family: Montserrat;
-        font-size: 1.5rem;
+        font-size: $font-size-large;
 
         @media screen and (max-width: 375px) {
-            font-size: 0.75rem;
+            font-size: $font-size-small;
         }
     }
 }
 
+
 /************************ Page Home ************************/
 .ads {
+
     &__title {
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 1.125rem;
+        @extend %font-common;
+        font-size: $font-size-main;
         font-weight: 700;
-        line-height: 142.6%;
+
+        color: $font-color-light;
     }
 }
 
 /************************ Page Housing ************************/
+.housingTitle p, .housingTitle p, .host p, .tags li {
+    @extend %font-common;
+}
+
 .housingTitle {
 
-    & h1,
-    & p {
-        font-family: Montserrat;
-        line-height: 142.6%;
-
-    }
-
     & h1 {
-        color: $text-mainTheme;
         font-size: 2.25rem;
+        color: $font-color-mainTheme;
 
         @media screen and (max-width: 375px) {
-            font-size: 1.125rem;
+            font-size: $font-size-main;
         }
     }
 
     & p {
-        color: #000;
-        font-size: 1.125rem;
+        font-size: $font-size-main;
+        color: $font-color-dark;
 
         @media screen and (max-width: 375px) {
             font-size: 0.875rem;
@@ -92,14 +91,13 @@
 .host {
 
     & p {
-        color: $text-mainTheme;
+        font-size: $font-size-main;
+        color: $font-color-mainTheme;
+
         text-align: right;
-        font-family: Montserrat;
-        font-size: 1.125rem;
-        line-height: 142.6%;
 
         @media screen and (max-width: 375px) {
-            font-size: 0.75rem;
+            font-size: $font-size-small;
         }
     }
 }
@@ -107,10 +105,9 @@
 .tags {
 
     & li {
-        color: #FFF;
-        font-family: Montserrat;
         font-size: 0.875rem;
         font-weight: 700;
+        color: $font-color-light;
 
         @media screen and (max-width: 375px) {
             font-size: 0.625rem;
@@ -119,18 +116,16 @@
 }
 
 /************************ Page about ************************/
-.collapse {
-    @extend %flex-column;
+.collapse, .collapse__title, .collapse__txt {
+    @extend %font-common;
+}
 
-    &__title,
-    &__txt {
-        font-family: Montserrat;
-    }
+.collapse {
 
     &__title {
-        color: #fff;
-        font-size: 24px;
+        font-size: $font-size-large;
         font-weight: 700;
+        color: $font-color-light;
 
         @media screen and (max-width: 375px) {
             font-size: 0.813rem;
@@ -138,7 +133,7 @@
     }
 
     &__txt {
-        font-size: 18px;
+        font-size: $font-size-main;
 
         @media screen and (max-width: 375px) {
             font-size: 0.688rem;
@@ -149,13 +144,17 @@
 }
 
 /************************ Page Error ************************/
+.pageError__title, .pageError__txt, .pageError__link {
+    @extend %font-common;
+}
 
 .pageError {
+
     &__title {
-        color: $text-mainTheme;
-        font-family: Montserrat;
         font-size: 18rem;
         font-weight: 700;
+        color: $font-color-mainTheme;
+
         text-align: center;
 
         @media screen and (max-width: 375px) {
@@ -164,19 +163,18 @@
     }
 
     &__txt {
-        color: $text-mainTheme;
-        font-family: Montserrat;
         font-size: 2.25rem;
+        color: $font-color-mainTheme;
 
         @media screen and (max-width: 375px) {
-            font-size: 1.125rem;
+            font-size: $font-size-main;
             text-align: center;
         }
     }
 
     &__link {
-        font-family: Montserrat;
         font-size: 2.25rem;
+
         text-decoration: underline;
 
         @media screen and (max-width: 375px) {

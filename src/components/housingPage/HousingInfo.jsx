@@ -3,7 +3,7 @@ import HousingTitle from "./HousingTitle";
 import HousingHost from "./HousingHost";
 import HousingTags from "./HousingTags";
 import HousingRating from "./HousingRating";
-import Collapse from "../layout/Collapse";
+import Collapse from "../UI/Collapse";
 
 function HousingInfo({ info }) {
     return (

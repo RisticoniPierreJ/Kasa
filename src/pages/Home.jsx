@@ -1,4 +1,4 @@
-import Banner from "../components/layout/Banner";
+import Banner from "../components/UI/Banner";
 import homeBannerImg from "../assets/images/photos/homeBannerImg.jpeg";
 import AdsContainer from "../components/home/AdsContainer";
 

@@ -5,22 +5,22 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "components/buttons";
-@import "components/banner";
-@import "components/collapse";
 @import "components/ads";
+@import "components/adsConatainer";
+@import "components/banner";
+@import "components/buttons";
+@import "components/carousel";
+@import "components/collapse";
 @import "components/housingHost";
 @import "components/housingInfo";
 @import "components/housingRating";
 @import "components/housingTags";
 @import "components/housingTitle";
-@import "components/carousel";
 
 @import "layout/footer";
 @import "layout/header";
-@import "layout/adsConatainer";
 
-@import "pages/home";
 @import "pages/about";
-@import "pages/pageError";
+@import "pages/home";
 @import "pages/housing";
+@import "pages/pageError";

@@ -2,7 +2,7 @@ import "../assets/css/main.css";
 import { useParams } from "react-router-dom";
 import adsData from "../datas/adsData";
 import HousingInfo from "../components/housingPage/HousingInfo";
-import Carousel from "../components/layout/Carousel";
+import Carousel from "../components/UI/Carousel";
 import PageError from "./PageError";
 
 function Housing() {

@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/layout/Banner";
-import Collapse from "../components/layout/Collapse";
+import Banner from "../components/UI/Banner";
+import Collapse from "../components/UI/Collapse";
 import aboutBannerImg from "../assets/images/photos/aboutBannerImg.jpeg";
 import aboutArticlesData from "../datas/aboutArticlesData";
 

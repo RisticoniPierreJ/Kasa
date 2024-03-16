@@ -16,6 +16,7 @@ function Carousel({ pictures }) {
         });
     };
 
+    // Proposition de Copilot //
     // const goRight = () => {
     //     setCurrentImageIndex((oldIndex) => (oldIndex + 1) % pictures.length);
     // };
