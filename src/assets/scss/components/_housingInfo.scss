@@ -1,8 +1,12 @@
 /********************************************** HousingInfo Component *****************************************/
 /*********************************************************************************************************/
-.housingInfo{
+.housingInfo, .housingInfo__titleTags, .housingInfo__hostRating{
     @extend %flex-column;
     gap: 20px;
+}
+
+.housingInfo{
+    
     width: 100%;
 
     &__top, &__bottom{
@@ -17,18 +21,13 @@
         }
     }
 
-    
-    &__titleTags, &__hostRating{
-        @extend %flex-column;
-        gap: 20px;
-    }
-
     &__titleTags{
 
         @media screen and (max-width: 375px){
             gap: 10px;
         }
     }
+    
     &__hostRating{
         align-items: flex-end;
 

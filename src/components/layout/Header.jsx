@@ -1,4 +1,3 @@
-import "../../assets/css/main.css";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../../assets/images/logos/logo.svg";
 

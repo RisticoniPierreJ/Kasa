@@ -1,5 +1,3 @@
-import "../../assets/css/main.css";
-
 function HousingTitle(props) {
     return (
         <article className="housingTitle">

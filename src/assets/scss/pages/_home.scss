@@ -1,18 +1,17 @@
 /********************************************** Page Home ************************************************/
 /*********************************************************************************************************/
-.homeContainer {
+.homeContainer, .homeContainer__main {
     @extend %flex-columnCentered;
-    gap: 50px;
     width: 100%;
+}
+
+.homeContainer {
+    gap: 50px;
     background-color: #ffffff;
     
     &__main {
-        @extend %flex-columnCentered;
         gap: 43px;
-        // margin-top: 50px;
-        width: 100%;
         padding: 0 5%;
-
     }
 }
 

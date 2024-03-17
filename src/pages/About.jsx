@@ -1,4 +1,3 @@
-import React from "react";
 import Banner from "../components/UI/Banner";
 import Collapse from "../components/UI/Collapse";
 import aboutBannerImg from "../assets/images/photos/aboutBannerImg.jpeg";

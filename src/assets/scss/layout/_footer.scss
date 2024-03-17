@@ -1,23 +1,21 @@
 /********************************************** Footer ************************************************/
 /*********************************************************************************************************/
-
-.footer {
+.footer, .footer__content {
     @extend %flex-columnCentered;
     width: 100%;
+}
+
+.footer {
+   
     height: 209px;
     background-color: black;
     padding: 66px 0 29px 0;
-    // padding: 66px 464px 29px 464px;
 
     &__content {
-        @extend %flex-columnCentered;
         gap: 28px;
-        width: 100%;
-        // min-width: 513px;
     }
 
     &_txt {
         color: white;
-        // width: 513px;
     }
 }

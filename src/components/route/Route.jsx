@@ -1,4 +1,3 @@
-import "../../assets/css/main.css";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Header from "../layout/Header";
 import Home from "../../pages/Home";

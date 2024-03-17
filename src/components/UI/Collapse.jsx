@@ -1,6 +1,4 @@
-import "../../assets/css/main.css";
 import React, { useState } from "react";
-
 
 function Collapse(props) {
     const title = props.title;
@@ -22,7 +20,10 @@ function Collapse(props) {
                 ></i>
             </div>
             <div className={`collapse__txt ${isContentShown ? "show" : ""}`}>
+
                 <div className="collapse__txt-inner">
+                    
+                    {/* Gestion de l'afficahge si la source est un tableau */}
                     {Array.isArray(text)
                         ? text.map((item, index) => <p key={index}>{item}</p>)
                         : text}

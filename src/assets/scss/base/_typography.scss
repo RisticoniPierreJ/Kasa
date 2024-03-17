@@ -3,7 +3,10 @@
 
 
 /************************ Layouts ************************/
-.header__nav, .banner__txt, .footer__txt {
+.header,
+.banner,
+.footer,
+.carousel {
     @extend %font-common;
 }
 
@@ -21,13 +24,15 @@
 .banner {
 
     &_txt {
+
+
         font-size: 3rem;
         font-weight: 700;
         color: $font-color-light;
 
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-align: center;
-        
+
         // VOIR AVEC HUGO
         -webkit-text-stroke-color: $font-color-dark;
 
@@ -39,13 +44,21 @@
 }
 
 .footer {
-    
+
     &_txt {
         font-size: $font-size-large;
 
         @media screen and (max-width: 375px) {
             font-size: $font-size-small;
         }
+    }
+}
+
+.carousel {
+
+    &__counter {
+        color: $font-color-light;
+        font-size: $font-size-main;
     }
 }
 
@@ -63,7 +76,10 @@
 }
 
 /************************ Page Housing ************************/
-.housingTitle p, .housingTitle p, .host p, .tags li {
+.housingTitle h1,
+.housingTitle p,
+.housingHost p,
+.tags li {
     @extend %font-common;
 }
 
@@ -88,7 +104,7 @@
     }
 }
 
-.host {
+.housingHost {
 
     & p {
         font-size: $font-size-main;
@@ -116,7 +132,9 @@
 }
 
 /************************ Page about ************************/
-.collapse, .collapse__title, .collapse__txt {
+.collapse,
+.collapse__title,
+.collapse__txt {
     @extend %font-common;
 }
 
@@ -144,7 +162,9 @@
 }
 
 /************************ Page Error ************************/
-.pageError__title, .pageError__txt, .pageError__link {
+.pageError__title,
+.pageError__txt,
+.pageError__link {
     @extend %font-common;
 }
 

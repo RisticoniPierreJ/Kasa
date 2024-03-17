@@ -12,21 +12,22 @@
     column-gap: 60px;
 
     @media screen and (max-width: 375px) {
-        background: none;
-        border-radius: unset;
-        padding: unset;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 20px;
-    }
 
-    @media screen and (max-width: 1024px) {
         background: none;
         border-radius: unset;
         padding: unset;
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 20px;
     }
+
+    // @media screen and (max-width: 1024px) {
+    //     background: none;
+    //     border-radius: unset;
+    //     padding: unset;
+    //     grid-template-columns: repeat(1, 1fr);
+    //     row-gap: 20px;
+    // }
 }

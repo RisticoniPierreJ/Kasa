@@ -1,4 +1,3 @@
-import "../../assets/css/main.css";
 import leftArrow from "../../assets/images/icons/leftArrow.svg";
 import rightArrow from "../../assets/images/icons/rightArrow.svg";
 import React, { useState } from "react";
@@ -8,25 +7,17 @@ function Carousel({ pictures }) {
 
     const goLeft = () => {
         setCurrentImageIndex((oldIndex) => {
-            if (oldIndex === 0) {
-                return pictures.length - 1;
-            } else {
-                return oldIndex - 1;
-            }
+            return oldIndex === 0 ? pictures.length - 1 : oldIndex - 1;
         });
     };
 
-    // Proposition de Copilot //
+    // Proposition de Copilot pour goRight //
     // const goRight = () => {
     //     setCurrentImageIndex((oldIndex) => (oldIndex + 1) % pictures.length);
     // };
     const goRight = () => {
         setCurrentImageIndex((oldIndex) => {
-            if (oldIndex + 1 >= pictures.length) { 
-                return 0; 
-            } else {
-                return oldIndex + 1; 
-            }
+            return oldIndex + 1 >= pictures.length ? 0 : oldIndex + 1;
         });
     };
 
@@ -37,6 +28,8 @@ function Carousel({ pictures }) {
                 src={pictures[currentImageIndex]}
                 alt="carousel"
             />
+
+            {/* Condition pour afficher le compteur uniquement si nb photo > 1  */}
             {pictures.length > 1 && (
             <>
                 <div className="carousel__counter">{currentImageIndex + 1}/{pictures.length}</div>

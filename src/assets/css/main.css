@@ -1,19 +1,21 @@
 /********************************************** Placeholders ************************************************/
 /*********************************************************************************************************/
 /************************ Flex box ************************/
-.housingTitle, .housingInfo__titleTags, .housingInfo__hostRating, .housingInfo, .collapse {
+.housingTitle, .housingInfo, .housingInfo__titleTags, .housingInfo__hostRating, .collapse {
   display: flex;
   flex-direction: column;
 }
 
-.pageError__container, .housingContainer__main, .housingContainer, .homeContainer__main, .homeContainer, .collapseAll, .aboutContainer__main, .aboutContainer, .footer__content, .footer {
+.pageError__container, .housingContainer, .housingContainer__main, .homeContainer, .homeContainer__main, .aboutContainer,
+.aboutContainer__main,
+.collapseAll, .footer, .footer__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.header_nav, .tags ul, .rating, .housingInfo__top, .housingInfo__bottom, .host, .collapse__title {
+.header_nav, .tags ul, .housingRating, .housingInfo__top, .housingInfo__bottom, .housingHost, .collapse__title {
   display: flex;
 }
 
@@ -24,9 +26,27 @@
 }
 
 /************************ Typography ************************/
-.pageError__title, .pageError__txt, .pageError__link, .collapse, .collapse__title, .collapse__txt, .housingTitle p, .host p, .tags li, .ads__title, .header__nav, .banner__txt, .footer__txt {
+.pageError__title,
+.pageError__txt,
+.pageError__link, .collapse,
+.collapse__title,
+.collapse__txt, .housingTitle h1,
+.housingTitle p,
+.housingHost p,
+.tags li, .ads__title, .header,
+.banner,
+.footer,
+.carousel {
   font-family: Montserrat;
   line-height: 142.6%;
+}
+
+/************************ Images ************************/
+.carousel__img, .banner_img, .ads__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /********************************************** Variables *****************************************/
@@ -135,6 +155,11 @@ main {
   }
 }
 
+.carousel__counter {
+  color: #FFF;
+  font-size: 1.125rem;
+}
+
 /************************ Page Home ************************/
 .ads__title {
   font-size: 1.125rem;
@@ -162,13 +187,13 @@ main {
   }
 }
 
-.host p {
+.housingHost p {
   font-size: 1.125rem;
   color: #ff6060;
   text-align: right;
 }
 @media screen and (max-width: 375px) {
-  .host p {
+  .housingHost p {
     font-size: 0.75rem;
   }
 }
@@ -237,6 +262,8 @@ main {
   }
 }
 
+/********************************************** Ads ************************************************/
+/*********************************************************************************************************/
 .ads {
   height: 340px;
   border-radius: 10px;
@@ -249,11 +276,7 @@ main {
   }
 }
 .ads__img {
-  width: 100%;
-  height: 100%;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .ads__title {
   position: absolute;
@@ -280,23 +303,14 @@ main {
 }
 @media screen and (max-width: 375px) {
   .adsContainer {
-    background: none;
-    border-radius: unset;
-    padding: unset;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .adsContainer {
     background: none;
     border-radius: unset;
     padding: unset;
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 20px;
   }
 }
 
@@ -316,11 +330,7 @@ main {
   }
 }
 .banner_img {
-  width: 100%;
-  height: 100%;
   border-radius: 25px;
-  -o-object-fit: cover;
-     object-fit: cover;
   opacity: 0.6;
 }
 @media screen and (max-width: 375px) {
@@ -341,8 +351,6 @@ main {
   }
 }
 
-/********************************************** Button *****************************************/
-/*********************************************************************************************************/
 /********************************************** Carousel *****************************************/
 /*********************************************************************************************************/
 .carousel {
@@ -358,10 +366,6 @@ main {
   }
 }
 .carousel__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 25px;
 }
 @media screen and (max-width: 375px) {
@@ -374,8 +378,6 @@ main {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: #fff;
-  font-size: 1.125rem;
 }
 @media screen and (max-width: 375px) {
   .carousel__counter {
@@ -457,30 +459,33 @@ main {
 
 /********************************************** HousingHost Component *****************************************/
 /*********************************************************************************************************/
-.host {
-  gap: 10px;
+.housingHost {
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
-.host img {
+.housingHost img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
 @media screen and (max-width: 375px) {
-  .host img {
+  .housingHost img {
     width: 32px;
     height: 32px;
   }
 }
-.host p {
+.housingHost p {
   width: 90px;
 }
 
 /********************************************** HousingInfo Component *****************************************/
 /*********************************************************************************************************/
-.housingInfo {
+.housingInfo, .housingInfo__titleTags, .housingInfo__hostRating {
   gap: 20px;
+}
+
+.housingInfo {
   width: 100%;
 }
 .housingInfo__top, .housingInfo__bottom {
@@ -492,9 +497,6 @@ main {
     flex-direction: column;
     gap: 14px;
   }
-}
-.housingInfo__titleTags, .housingInfo__hostRating {
-  gap: 20px;
 }
 @media screen and (max-width: 375px) {
   .housingInfo__titleTags {
@@ -528,13 +530,13 @@ main {
 
 /********************************************** HouseRating Component *****************************************/
 /*********************************************************************************************************/
-.rating {
+.housingRating {
   gap: 10px;
 }
-.rating .fas {
+.housingRating .fas {
   color: #ff6060;
 }
-.rating .fas.empty {
+.housingRating .fas.empty {
   color: lightgray;
 }
 
@@ -554,15 +556,17 @@ main {
 /*********************************************************************************************************/
 /********************************************** Footer ************************************************/
 /*********************************************************************************************************/
-.footer {
+.footer, .footer__content {
   width: 100%;
+}
+
+.footer {
   height: 209px;
   background-color: black;
   padding: 66px 0 29px 0;
 }
 .footer__content {
   gap: 28px;
-  width: 100%;
 }
 .footer_txt {
   color: white;
@@ -597,19 +601,10 @@ main {
   text-decoration: underline;
 }
 
-.nav-link-active {
-  text-decoration: underline;
-}
-
 /********************************************** Page about ************************************************/
 /*********************************************************************************************************/
 .aboutContainer {
   gap: 50px;
-}
-@media screen and (max-width: 375px) {
-  .aboutContainer {
-    gap: 20px;
-  }
 }
 .aboutContainer__main {
   gap: 38px;
@@ -618,7 +613,6 @@ main {
 }
 @media screen and (max-width: 375px) {
   .aboutContainer__main {
-    gap: 20px;
     padding: 0 5.5%;
   }
 }
@@ -627,7 +621,10 @@ main {
   gap: 30px;
   width: 100%;
 }
+
 @media screen and (max-width: 375px) {
+  .aboutContainer,
+  .aboutContainer__main,
   .collapseAll {
     gap: 20px;
   }
@@ -635,22 +632,27 @@ main {
 
 /********************************************** Page Home ************************************************/
 /*********************************************************************************************************/
+.homeContainer, .homeContainer__main {
+  width: 100%;
+}
+
 .homeContainer {
   gap: 50px;
-  width: 100%;
   background-color: #ffffff;
 }
 .homeContainer__main {
   gap: 43px;
-  width: 100%;
   padding: 0 5%;
 }
 
 /********************************************** Page Housing *****************************************/
 /*********************************************************************************************************/
+.housingContainer, .housingContainer__main {
+  width: 100%;
+}
+
 .housingContainer {
   gap: 50px;
-  width: 100%;
 }
 @media screen and (max-width: 375px) {
   .housingContainer {
@@ -659,7 +661,6 @@ main {
 }
 .housingContainer__main {
   gap: 30px;
-  width: 100%;
   padding: 0 7%;
 }
 @media screen and (max-width: 375px) {
