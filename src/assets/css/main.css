@@ -1,12 +1,15 @@
 /********************************************** Placeholders ************************************************/
 /*********************************************************************************************************/
 /************************ Flex box ************************/
-.housingTitle, .housingInfo, .housingInfo__titleTags, .housingInfo__hostRating, .collapse {
+.housingTitle, .housingInfo,
+.housingInfo__titleTags,
+.housingInfo__hostRating, .collapse {
   display: flex;
   flex-direction: column;
 }
 
-.pageError__container, .housingContainer, .housingContainer__main, .homeContainer, .homeContainer__main, .aboutContainer,
+.pageError__container, .housingContainer,
+.housingContainer__main, .homeContainer, .homeContainer__main, .aboutContainer,
 .aboutContainer__main,
 .collapseAll, .footer, .footer__content {
   display: flex;
@@ -125,7 +128,7 @@ main {
 .header_nav {
   font-size: 1.5rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .header_nav {
     font-size: 0.75rem;
   }
@@ -139,7 +142,7 @@ main {
   text-align: center;
   -webkit-text-stroke-color: #000;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .banner_txt {
     font-size: 1.5rem;
     text-align: left;
@@ -149,7 +152,7 @@ main {
 .footer_txt {
   font-size: 1.5rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .footer_txt {
     font-size: 0.75rem;
   }
@@ -172,7 +175,7 @@ main {
   font-size: 2.25rem;
   color: #ff6060;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingTitle h1 {
     font-size: 1.125rem;
   }
@@ -181,7 +184,7 @@ main {
   font-size: 1.125rem;
   color: #000;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingTitle p {
     font-size: 0.875rem;
   }
@@ -192,7 +195,7 @@ main {
   color: #ff6060;
   text-align: right;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingHost p {
     font-size: 0.75rem;
   }
@@ -203,7 +206,7 @@ main {
   font-weight: 700;
   color: #FFF;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .tags li {
     font-size: 0.625rem;
   }
@@ -215,7 +218,7 @@ main {
   font-weight: 700;
   color: #FFF;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .collapse__title {
     font-size: 0.813rem;
   }
@@ -223,7 +226,7 @@ main {
 .collapse__txt {
   font-size: 1.125rem;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .collapse__txt {
     font-size: 0.688rem;
     line-height: 142.6%;
@@ -237,7 +240,7 @@ main {
   color: #ff6060;
   text-align: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .pageError__title {
     font-size: 6rem;
   }
@@ -246,7 +249,7 @@ main {
   font-size: 2.25rem;
   color: #ff6060;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .pageError__txt {
     font-size: 1.125rem;
     text-align: center;
@@ -256,7 +259,7 @@ main {
   font-size: 2.25rem;
   text-decoration: underline;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .pageError__link {
     font-size: 0.875rem;
   }
@@ -269,7 +272,7 @@ main {
   border-radius: 10px;
   position: relative;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .ads {
     height: 255px;
     background: none;
@@ -301,7 +304,7 @@ main {
   -moz-column-gap: 60px;
        column-gap: 60px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .adsContainer {
     display: flex;
     flex-direction: column;
@@ -313,6 +316,9 @@ main {
     padding: unset;
   }
 }
+.adsContainer a {
+  width: 100%;
+}
 
 /********************************************** Banner ************************************************/
 /*********************************************************************************************************/
@@ -323,7 +329,7 @@ main {
   position: relative;
   background: #000;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .banner {
     height: 110px;
     border-radius: 10px;
@@ -333,21 +339,22 @@ main {
   border-radius: 25px;
   opacity: 0.6;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .banner_img {
     border-radius: 10px;
   }
 }
 .banner_txt {
-  width: 60%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .banner_txt {
-    width: 90%;
+    padding-right: 30%;
+    padding-left: 16px;
   }
 }
 
@@ -359,7 +366,7 @@ main {
   border-radius: 25px;
   position: relative;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .carousel {
     height: 255px;
     border-radius: 10px;
@@ -368,7 +375,7 @@ main {
 .carousel__img {
   border-radius: 25px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .carousel__img {
     border-radius: 10px;
   }
@@ -379,7 +386,7 @@ main {
   left: 50%;
   transform: translateX(-50%);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .carousel__counter {
     display: none;
   }
@@ -394,7 +401,7 @@ main {
   justify-content: space-between;
   z-index: 1;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .arrows {
     height: 24px;
   }
@@ -405,7 +412,7 @@ main {
 .arrows__left {
   margin-left: 20px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .arrows__left {
     margin-left: 6px;
   }
@@ -413,7 +420,7 @@ main {
 .arrows__right {
   margin-right: 20px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .arrows__right {
     margin-right: 6px;
   }
@@ -469,7 +476,7 @@ main {
   height: 64px;
   border-radius: 50%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingHost img {
     width: 32px;
     height: 32px;
@@ -481,7 +488,9 @@ main {
 
 /********************************************** HousingInfo Component *****************************************/
 /*********************************************************************************************************/
-.housingInfo, .housingInfo__titleTags, .housingInfo__hostRating {
+.housingInfo,
+.housingInfo__titleTags,
+.housingInfo__hostRating {
   gap: 20px;
 }
 
@@ -492,13 +501,13 @@ main {
   justify-content: space-between;
   width: 100%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingInfo__top, .housingInfo__bottom {
     flex-direction: column;
     gap: 14px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingInfo__titleTags {
     gap: 10px;
   }
@@ -506,7 +515,7 @@ main {
 .housingInfo__hostRating {
   align-items: flex-end;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingInfo__hostRating {
     flex-direction: row;
     justify-content: space-between;
@@ -522,7 +531,7 @@ main {
 .housingInfo__bottom {
   gap: 76px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingInfo__bottom {
     gap: 20px;
   }
@@ -579,7 +588,7 @@ main {
   padding: 45px 100px 0 100px;
   width: 100%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .header {
     padding: 20px 20px 0 20px;
   }
@@ -587,12 +596,12 @@ main {
 .header_nav {
   gap: 57px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .header_nav {
     gap: 26px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .header img {
     width: 145px;
   }
@@ -611,7 +620,7 @@ main {
   width: 100%;
   padding: 0 7%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .aboutContainer__main {
     padding: 0 5.5%;
   }
@@ -622,7 +631,7 @@ main {
   width: 100%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .aboutContainer,
   .aboutContainer__main,
   .collapseAll {
@@ -647,14 +656,15 @@ main {
 
 /********************************************** Page Housing *****************************************/
 /*********************************************************************************************************/
-.housingContainer, .housingContainer__main {
+.housingContainer,
+.housingContainer__main {
   width: 100%;
 }
 
 .housingContainer {
   gap: 50px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingContainer {
     gap: 27px;
   }
@@ -663,7 +673,7 @@ main {
   gap: 30px;
   padding: 0 7%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .housingContainer__main {
     gap: 15px;
     padding: 0 5.5%;
@@ -675,7 +685,7 @@ main {
 .pageError__container {
   gap: 139px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
   .pageError__container {
     gap: 113px;
   }

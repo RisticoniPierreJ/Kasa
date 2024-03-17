@@ -15,7 +15,7 @@
     &_nav {
         font-size: $font-size-large;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: $font-size-small;
         }
     }
@@ -24,8 +24,6 @@
 .banner {
 
     &_txt {
-
-
         font-size: 3rem;
         font-weight: 700;
         color: $font-color-light;
@@ -36,7 +34,7 @@
         // VOIR AVEC HUGO
         -webkit-text-stroke-color: $font-color-dark;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: $font-size-large;
             text-align: left;
         }
@@ -48,7 +46,7 @@
     &_txt {
         font-size: $font-size-large;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: $font-size-small;
         }
     }
@@ -89,7 +87,7 @@
         font-size: 2.25rem;
         color: $font-color-mainTheme;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: $font-size-main;
         }
     }
@@ -98,7 +96,7 @@
         font-size: $font-size-main;
         color: $font-color-dark;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: 0.875rem;
         }
     }
@@ -112,7 +110,7 @@
 
         text-align: right;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: $font-size-small;
         }
     }
@@ -125,7 +123,7 @@
         font-weight: 700;
         color: $font-color-light;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: 0.625rem;
         }
     }
@@ -145,7 +143,7 @@
         font-weight: 700;
         color: $font-color-light;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: 0.813rem;
         }
     }
@@ -153,7 +151,7 @@
     &__txt {
         font-size: $font-size-main;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: 0.688rem;
             line-height: 142.6%;
 
@@ -177,7 +175,7 @@
 
         text-align: center;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: 6rem;
         }
     }
@@ -186,7 +184,7 @@
         font-size: 2.25rem;
         color: $font-color-mainTheme;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: $font-size-main;
             text-align: center;
         }
@@ -197,7 +195,7 @@
 
         text-decoration: underline;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             font-size: 0.875rem;
         }
     }

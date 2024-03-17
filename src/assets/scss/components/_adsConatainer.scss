@@ -11,7 +11,7 @@
     row-gap: 50px;
     column-gap: 60px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -23,11 +23,7 @@
         padding: unset;
     }
 
-    // @media screen and (max-width: 1024px) {
-    //     background: none;
-    //     border-radius: unset;
-    //     padding: unset;
-    //     grid-template-columns: repeat(1, 1fr);
-    //     row-gap: 20px;
-    // }
+    & a {
+        width: 100%;
+    }
 }

@@ -6,7 +6,7 @@
     border-radius: 25px;
     position: relative;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         height: 255px;
         border-radius: 10px;
     }
@@ -15,7 +15,7 @@
         @extend %img-cover;
         border-radius: 25px;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             border-radius: 10px;
         }
     }
@@ -26,7 +26,7 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             display: none;
         }
     }
@@ -41,7 +41,7 @@
     justify-content: space-between;
     z-index: 1;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 768px) {
         height: 24px;
     }
 
@@ -54,7 +54,7 @@
     &__left {
         margin-left: 20px;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             margin-left: 6px;
         }
     }
@@ -62,7 +62,7 @@
     &__right {
         margin-right: 20px;
 
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 768px) {
             margin-right: 6px;
         }
     }

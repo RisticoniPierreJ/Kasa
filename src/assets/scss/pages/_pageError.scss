@@ -6,7 +6,7 @@
         @extend %flex-columnCentered;
         gap: 139px;
 
-        @media screen and (max-width: 375px){
+        @media screen and (max-width: 768px) {
             gap: 113px;
         }
     }
