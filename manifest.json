@@ -1,0 +1,16 @@
+{
+  "short_name": "Kasa",
+  "name": "Kasa",
+  "icons": [
+    
+    {
+      "src": "favicon.png",
+      "sizes": "47x54",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
