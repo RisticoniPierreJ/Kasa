@@ -8,7 +8,7 @@ import Housing from "../../pages/Housing";
 
 const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/Kasa",
         element: (
             <div className="homeContainer">
                 <Header />

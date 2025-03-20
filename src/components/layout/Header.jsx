@@ -9,7 +9,7 @@ function Header() {
             <header className="header">
                 <img src={logo} alt="Logo Kasa" />
                 <nav className="header_nav">
-                    <Link to="/" className={location.pathname === "/" ? 'header__navLink-active' : ''}>ACCUEIL</Link>
+                    <Link to="/Kasa" className={location.pathname === "/Kasa" ? 'header__navLink-active' : ''}>ACCUEIL</Link>
                     <Link to="/apropos" className={location.pathname === "/apropos" ? 'header__navLink-active' : ''}>À PROPOS</Link>
                 </nav>
             </header>
